@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev & Data Analyst | [Your Name]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Quicksand', sans-serif; 
+            background: linear-gradient(135deg, #fff1f2 0%, #f5f3ff 50%, #f0f9ff 100%);
+            min-height: 100vh;
+        }
+        .mermaid-glass { 
+            background: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(15px); 
+            border: 1px solid rgba(255, 255, 255, 0.7); 
+            box-shadow: 0 10px 40px -10px rgba(236, 72, 153, 0.15);
+        }
+        .skill-bubble {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #fdf2f8;
+        }
+        .skill-bubble:hover { transform: scale(1.1) rotate(2deg); border-color: #f472b6; }
+        .gradient-text {
+            background: linear-gradient(to right, #f472b6, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sparkle-icon { color: #fbbf24; animation: twinkle 2s infinite; }
+        @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl font-extrabold mb-4 gradient-text">Win Pa Pa Min</h1>
+        <p class="text-lg text-slate-600 mb-2">23 years old | Final Year Student</p>
+        <p class="text-slate-500 mb-6">University of Computer Studies, Pyay (UCSPyay)</p>
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 border border-purple-200 text-purple-600 font-semibold text-sm mb-8">
+            <i class="fas fa-chart-line"></i> Aspiring Data Analyst
+        </div>
+        <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed text-base">
+            Passionate about leveraging technical skills to uncover insights from data. Transitioning from web development into data analytics with expertise in SQL, Python, and data visualization.
+        </p>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 mb-24">
+        <div class="mermaid-glass p-10 rounded-[40px]">
+            <h2 class="text-center text-2xl font-bold mb-10"><i class="fas fa-magic sparkle-icon mr-2"></i> Technical Toolbox</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-pink-500 font-bold uppercase text-xs tracking-widest mb-6 flex items-center">
+                        <span class="w-8 h-[1px] bg-pink-300 mr-2"></span> Web Development Base
+                    </h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="skill-bubble flex items-center gap-2 font-semibold text-slate-600">
+                            <i class="fab fa-java text-orange-400"></i> J2EE
+                        </div>
+                        <div class="skill-bubble flex items-center gap-2 font-semibold text-slate-600">
+                            <i class="fas fa-code text-blue-500"></i> C# / .NET
+                        </div>
+                        <div class="skill-bubble flex items-center gap-2 font-semibold text-slate-600">
+                            <i class="fab fa-php text-indigo-400"></i> PHP 
+                        </div>
+                        <div class="skill-bubble flex items-center gap-2 font-semibold text-slate-600">
+                            <i class="fab fa-js text-yellow-400"></i> JavaScript
+                        </div>
+                        <div class="skill-bubble flex items-center gap-2 font-semibold text-slate-600">
+                            <i class="fas fa-database text-emerald-400"></i> MySQL / SQL Server
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-purple-500 font-bold uppercase text-xs tracking-widest mb-6 flex items-center">
+                        <span class="w-8 h-[1px] bg-purple-300 mr-2"></span> Data Analyst Transition
+                    </h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="skill-bubble flex items-center gap-2 font-bold text-purple-600 bg-purple-50">
+                            <i class="fas fa-chart-pie"></i> Data Visualization
+                        </div>
+                        <div class="skill-bubble flex items-center gap-2 font-bold text-purple-600 bg-purple-50">
+                            <i class="fas fa-filter"></i> SQL Analysis
+                        </div>
+                        <div class="skill-bubble flex items-center gap-2 font-bold text-purple-600 bg-purple-50">
+                            <i class="fab fa-python"></i> Python for DA
+                        </div>
+                        <div class="skill-bubble flex items-center gap-2 font-bold text-purple-600 bg-purple-50">
+                            <i class="fas fa-table"></i> Advanced Excel
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20 bg-white/30 rounded-[60px] border border-white/40">
+        <h2 class="text-3xl font-bold mb-16 text-center">Software Engineering Portfolio</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="mermaid-glass p-8 rounded-[35px] relative overflow-hidden group">
+                <div class="absolute -top-4 -right-4 w-20 h-20 bg-pink-100 rounded-full blur-2xl group-hover:bg-pink-200 transition"></div>
+                <h3 class="text-xl font-bold mb-4">Cafe Management</h3>
+                <p class="text-slate-500 text-sm mb-6 italic">Built with J2EE & JSP</p>
+                <p class="text-slate-600 text-sm mb-6">Developed a full-stack system to automate coffee orders and stock control.</p>
+                <div class="text-xs font-bold text-indigo-500 bg-indigo-50 inline-block px-3 py-1 rounded-full border border-indigo-100">
+                    <i class="fas fa-database mr-1"></i> DA Potential: Sales Trends Analysis
+                </div>
+            </div>
+
+            <div class="mermaid-glass p-8 rounded-[35px] relative overflow-hidden group">
+                <div class="absolute -top-4 -right-4 w-20 h-20 bg-purple-100 rounded-full blur-2xl group-hover:bg-purple-200 transition"></div>
+                <h3 class="text-xl font-bold mb-4">UCSPyay Forum</h3>
+                <p class="text-slate-500 text-sm mb-6 italic">Built with PHP & MySQL</p>
+                <p class="text-slate-600 text-sm mb-6">Designed a collaborative social platform for university students to share knowledge.</p>
+                <div class="text-xs font-bold text-pink-500 bg-pink-50 inline-block px-3 py-1 rounded-full border border-pink-100">
+                    <i class="fas fa-heart mr-1"></i> DA Potential: Sentiment Analysis
+                </div>
+            </div>
+
+            <div class="mermaid-glass p-8 rounded-[35px] relative overflow-hidden group">
+                <div class="absolute -top-4 -right-4 w-20 h-20 bg-blue-100 rounded-full blur-2xl group-hover:bg-blue-200 transition"></div>
+                <h3 class="text-xl font-bold mb-4">Cutie Paw Shelter</h3>
+                <p class="text-slate-500 text-sm mb-6 italic">Built with C# & .NET</p>
+                <p class="text-slate-600 text-sm mb-6">Created an administrative tool for managing pet adoptions and medical record tracking.</p>
+                <div class="text-xs font-bold text-purple-500 bg-purple-50 inline-block px-3 py-1 rounded-full border border-purple-100">
+                    <i class="fas fa-chart-line mr-1"></i> DA Potential: Health Demographics
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-20 text-center">
+        <p class="text-slate-400 text-sm mb-4 italic">Sparkling code and clean data ✨</p>
+        <div class="flex justify-center gap-6 text-slate-400">
+            <a href="#" class="hover:text-pink-400"><i class="fab fa-github text-xl"></i></a>
+            <a href="#" class="hover:text-pink-400"><i class="fab fa-linkedin text-xl"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
